@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>NOOB INU ($NOOB) | The Next 100x Solana Meme Coin</title>
+    <meta name="description" content="Join the NOOB INU army. The community-driven Solana meme coin on a mission to slay the giants (DOGE, SHIB, PEPE). 95% LP Burnt. 100% Safe. Buy $NOOB now.">
+    <meta name="keywords" content="NOOB INU, $NOOB, Solana meme coin, crypto gem, buy NOOB, raydium swap, solana token, 100x crypto">
+    <meta name="author" content="Noob Inu Community">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.noobinu.com/">
+    <meta property="og:title" content="NOOB INU ($NOOB) - The Giant Slayer">
+    <meta property="og:description" content="Missed PEPE? Don't miss NOOB. 95% Liquidity Locked & Burnt. The safest moonshot on Solana.">
+    <meta property="og:image" content="https://www.noobinu.com/assets/banner.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="$NOOB - The Meme Coin Killer">
+    <meta name="twitter:description" content="Built on Solana. Transparency first. Join the revolution.">
+    <meta name="twitter:image" content="https://www.noobinu.com/assets/banner.jpg">
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐶</text></svg>">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FinancialProduct",
+      "name": "NOOB INU",
+      "alternateName": "$NOOB",
+      "description": "A decentralized meme token on the Solana blockchain.",
+      "brand": {
+        "@type": "Brand",
+        "name": "NOOB INU"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "url": "https://raydium.io/swap"
+      }
+    }
+    </script>
+
+    <style>
+        /* CRITICAL CSS & RESET */
+        :root {
+            --primary: #14F195; /* Solana Green */
+            --primary-hover: #0ed382;
+            --secondary: #9945FF; /* Solana Purple */
+            --bg-dark: #050505;
+            --bg-card: #111111;
+            --text-main: #ffffff;
+            --text-muted: #a0a0a0;
+            --font-main: 'Inter', system-ui, -apple-system, sans-serif;
+            --font-mono: 'Courier New', monospace;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            font-family: var(--font-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* UTILITY CLASSES */
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .text-center { text-align: center; }
+        .highlight { color: var(--primary); text-shadow: 0 0 15px rgba(20, 241, 149, 0.4); }
+        .flex-center { display: flex; justify-content: center; align-items: center; }
+
+        /* HERO SECTION */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: radial-gradient(circle at 50% 50%, #1a1a1a 0%, #000000 70%);
+            padding: 40px 20px;
+            position: relative;
+        }
+
+        h1 {
+            font-size: clamp(3rem, 8vw, 6rem); /* Responsive font size */
+            margin: 0;
+            font-weight: 900;
+            letter-spacing: -2px;
+            line-height: 1.1;
+            text-transform: uppercase;
+        }
+
+        p.subtitle {
+            font-size: clamp(1rem, 2vw, 1.5rem);
+            color: var(--text-muted);
+            max-width: 700px;
+            margin: 20px auto 40px;
+        }
+
+        /* CA BOX (Contract Address) */
+        .ca-box {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid #333;
+            padding: 15px 25px;
+            border-radius: 50px;
+            font-family: var(--font-mono);
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 30px;
+            cursor: pointer;
+            transition: all 0.2s;
+            max-width: 100%;
+            overflow: hidden;
+        }
+
+        .ca-box:hover { background: rgba(20, 241, 149, 0.1); border-color: var(--primary); }
+        .ca-box span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .copy-icon { opacity: 0.7; }
+
+        /* BUTTONS */
+        .btn-group { display: flex; gap: 15px; flex-wrap: wrap; justify-content: center; }
+
+        .btn {
+            padding: 16px 32px;
+            font-size: 1.1rem;
+            font-weight: 800;
+            text-decoration: none;
+            border-radius: 8px;
+            text-transform: uppercase;
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-glow {
+            background-color: var(--primary);
+            color: #000;
+            box-shadow: 0 0 20px rgba(20, 241, 149, 0.4);
+        }
+
+        .btn-glow:hover {
+            transform: translateY(-2px);
+            background-color: #fff;
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.6);
+        }
+
+        .btn-outline {
+            border: 2px solid var(--secondary);
+            color: var(--text-main);
+            background: transparent;
+        }
+
+        .btn-outline:hover { background: var(--secondary); }
+
+        /* STATS */
+        .stats-section { padding: 80px 0; background: #080808; border-top: 1px solid #1a1a1a; }
+        .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+        
+        .stat-card {
+            background: var(--bg-card);
+            padding: 40px;
+            border-radius: 16px;
+            border: 1px solid #222;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        
+        .stat-card:hover { transform: translateY(-5px); border-color: var(--primary); }
+        .stat-number { font-size: 3rem; font-weight: 800; color: var(--primary); margin: 0; }
+        .stat-label { font-size: 1.2rem; color: var(--text-muted); margin-top: 10px; }
+
+        /* MISSION */
+        .mission-section { padding: 100px 0; text-align: center; }
+        .mission-text { font-size: 1.5rem; max-width: 800px; margin: 0 auto; color: #ddd; }
+        
+        /* FOOTER */
+        footer { padding: 50px 0; border-top: 1px solid #222; text-align: center; color: #555; font-size: 0.9rem; }
+        .social-links a { color: var(--primary); margin: 0 15px; text-decoration: none; font-size: 1.1rem; }
+
+        /* Notification Toast */
+        #toast {
+            visibility: hidden;
+            min-width: 250px;
+            background-color: var(--primary);
+            color: #000;
+            text-align: center;
+            border-radius: 4px;
+            padding: 16px;
+            position: fixed;
+            z-index: 1;
+            left: 50%;
+            bottom: 30px;
+            transform: translateX(-50%);
+            font-weight: bold;
+        }
+        #toast.show { visibility: visible; animation: fadein 0.5s, fadeout 0.5s 2.5s; }
+
+        @keyframes fadein { from {bottom: 0; opacity: 0;} to {bottom: 30px; opacity: 1;} }
+        @keyframes fadeout { from {bottom: 30px; opacity: 1;} to {bottom: 0; opacity: 0;} }
+    </style>
+</head>
+<body>
+
+    <main>
+        <section class="hero">
+            <div class="container text-center">
+                <h1>NOOB <span class="highlight">INU</span></h1>
+                <p class="subtitle">The community-driven Solana meme coin with a mission to slay the giants of the crypto world.</p>
+
+                <div class="ca-box" onclick="copyToClipboard('8xnc8h8xqe1dbnqpsvqgmiefvq5z8aheucxgj5tqvrjq')">
+                    <span>CA: 8xnc8h8xqe1dbnqpsvqgmiefvq5z8aheucxgj5tqvrjq</span>
+                    <span class="copy-icon">📋</span>
+                </div>
+
+                <div class="btn-group">
+                    <a href="https://raydium.io/swap?inputCurrency=sol&outputCurrency=8xnc8h8xqe1dbnqpsvqgmiefvq5z8aheucxgj5tqvrjq" target="_blank" class="btn btn-glow">BUY $NOOB</a>
+                    <a href="https://dexscreener.com/solana/8xnc8h8xqe1dbnqpsvqgmiefvq5z8aheucxgj5tqvrjq" target="_blank" class="btn btn-outline">LIVE CHART</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats-section">
+            <div class="container">
+                <div class="grid-3">
+                    <article class="stat-card">
+                        <div class="stat-number">95%</div>
+                        <div class="stat-label">Liquidity Pool</div>
+                    </article>
+                    <article class="stat-card">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">LP Tokens Burnt</div>
+                    </article>
+                    <article class="stat-card">
+                        <div class="stat-number">5%</div>
+                        <div class="stat-label">Dev Wallet</div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="mission-section">
+            <div class="container">
+                <h2 style="font-size: 2.5rem; margin-bottom: 30px;">THE MISSION</h2>
+                <p class="mission-text">
+                    $NOOB is not just a token. It's a statement. We are here to challenge the dominance of DOGE, SHIB, and PEPE. 
+                    Launched fairly on Solana with transparency and security at its core. No rugs, no games. Just pure meme power.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="#" target="_blank">Twitter (X)</a>
+                <a href="#" target="_blank">Telegram</a>
+                <a href="https://solscan.io/token/8xnc8h8xqe1dbnqpsvqgmiefvq5z8aheucxgj5tqvrjq" target="_blank">Solscan</a>
+            </div>
+            <p style="margin-top: 20px;">&copy; 2026 NOOB INU. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="toast">Contract Address Copied!</div>
+
+    <script>
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(function() {
+                var x = document.getElementById("toast");
+                x.className = "show";
+                setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+            }, function(err) {
+                console.error('Async: Could not copy text: ', err);
+            });
+        }
+    </script>
+</body>
+</html>
